@@ -16,8 +16,10 @@
     "plugins": [
       {
         "name": "next"
-      }
-    ],
+      },
+    ],"paths": {
+      "app/*": ["./src/*"]
+    }
     
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

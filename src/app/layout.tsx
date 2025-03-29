@@ -1,8 +1,7 @@
 
-import {Header} from "../components/shared/Header";
-import {Footer} from "../components/shared/Footer";
-//import {Footer} from 'app/components/shared/Footer';
-//import './sass/main.sass';
+import {Header} from "app/components/shared/Header";
+import {Footer} from "app/components/shared/Footer";
+import 'app/sass/globals.sass';
 
 export default function RootLayout({
   children,
