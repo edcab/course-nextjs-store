@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const path = require('path')
 
-export default nextConfig;
+const nextConfig = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src/app/sass')],
+    prependData: `@use "main" as *`,
+  },
+}
+
+module.exports = nextConfig
