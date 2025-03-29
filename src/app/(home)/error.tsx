@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import styles from './Error.module.sass'
+
 
 interface ErrorProps {
   error: Error;
@@ -18,9 +20,7 @@ export default function Error({ error, reset }: ErrorProps) {
   }, [])
 
   return (
-    <div style={{
-      padding: '10rem',
-    }}>
+    <div className={styles.Error}>
       <h1>:c</h1>
       <p>Ha ocurrido un error</p>
       <button onClick={reset}>Intentar de nuevo</button>
