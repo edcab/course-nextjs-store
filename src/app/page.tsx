@@ -1,17 +1,13 @@
-"use client"
-
-import { Description } from "../components/home/Description/Description";
-import { Hero } from "../components/home/Hero";
-import { MainProducts } from "../components/home/MainProducts";
+import { Hero } from "app/components/home/Hero"
+import { Description } from "app/components/home/Description"
+import { MainProducts } from "app/components/home/MainProducts"
 
 export default function Home() {
-  console.log("Hola mundo");
   return (
-      <main>
-        <Hero/>
-        <Description />
-        <MainProducts />
-      </main>
-    
-  );
+    <main>
+      <Hero />
+      <Description />
+      <MainProducts />
+    </main>
+  )
 }

@@ -1,20 +1,15 @@
 interface CategoryProps {
-    params: {
-        categories: string[];
-        searchParams?: string 
-    }
+  params: {
+    categories: string[],
+  }
+  searchParams?: string
 }
 
-
-export default async function Category(props: CategoryProps) {
-  
-    const { categories } = await props.params;
-
-    console.log(categories);
-  
-    return (
-    <div>
-      <h1>Category: {categories}</h1>
-    </div>
-  );
+export default function Category(props: CategoryProps){
+  console.log(props)
+  const { categories } = props.params
+  console.log(categories)
+  return(
+    <h1>Categoria dinámica: {categories}</h1>
+  )
 }
